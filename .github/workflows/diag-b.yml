@@ -1,0 +1,9 @@
+name: diag-b
+on:
+  push:
+    branches: [diag]
+jobs:
+  b:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6

@@ -1,0 +1,12 @@
+name: diag-c
+on:
+  push:
+    branches: [diag]
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: "3.47.9"
